@@ -12,7 +12,7 @@ body {
 
 /* HERO SECTION */
 .hero {
-  height: 92vh;
+  height: 95vh;
   background: url('harsha1.jpg') no-repeat right center;
   background-size: cover;
   display: flex;
@@ -27,7 +27,7 @@ body {
   content: '';
   position: absolute;
   top: 0; left: 0;
-  width: 88%; height: 88%;
+  width: 100%; height: 95%;
   z-index: 0;
 }
 
@@ -35,9 +35,8 @@ body {
   position: relative;
   z-index: 1;
   max-width: 500px;
-  padding: 8rem;
+  padding: 3rem;
   border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 .hero h1 {
@@ -47,7 +46,7 @@ body {
 }
 
 .tagline {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   color: #4a5568;
   margin-bottom: 1.5rem;
 }
@@ -55,7 +54,8 @@ body {
 .btn {
   display: inline-block;
   padding: 0.75rem 1.5rem;
-  background-color: #f8f3f3;
+  background-color: #f8faf7;
+  color: rgb(13, 0, 0);
   text-decoration: none;
   font-weight: 600;
   border-radius: 6px;
@@ -63,8 +63,24 @@ body {
 }
 
 .btn:hover {
-  background-color: #319795;
+  background-color: #f5f7f7;
 }
+
+.mini-footer {
+  text-align: center;
+  color: #718096;
+  font-size: .9rem;
+  margin-bottom: 2rem;
+}
+
+/* SECTION TITLES */
+.section-title, .skills h2, .projects h2, .achievements h2, .contact h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: .5rem;
+  color: #1a202c;
+}
+/* ABOUT */
 .about-grid {
   background: #fff;
   padding: 2rem;
@@ -76,17 +92,15 @@ body {
 
 .about-content {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center;     /* Center items horizontally */
   gap: 2rem;
-  justify-content: center; /* Center content inside the grid */
-  text-align: center;
 }
 
 .about-image {
   display: flex;
   justify-content: center;
-  align-items: center;
-  width: 100%; /* Full width to center within the container */
+  width: 100%;
 }
 
 .about-image img {
@@ -97,6 +111,7 @@ body {
   margin-bottom: 1.5rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
 .about-info h3 { font-size:1.4rem; color:#2d3748; margin-bottom:1rem; }
 .about-info .intro { font-style:italic; color:#555; margin-bottom:1rem; }
 .info-grid {
